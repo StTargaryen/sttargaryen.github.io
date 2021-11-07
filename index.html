@@ -475,15 +475,20 @@
           class="
             flex
             tablet:grid
+            tablet:grid-cols-3
+            desktop:flex
             mx-auto
             gap-[25px]
             justify-center
+            items-center
             w-full
             tablet:w-auto
+            tablet:max-w-screen-tablet
+            desktop:max-w-screen-desktop
           "
         >
           <!-- first card -->
-          <div
+          <a href="#"
             class="
               flex
               absolute
@@ -492,7 +497,7 @@
               justify-center
               scale-75
               tablet:scale-100
-              col-start-1 col-span-3
+              col-start-1 tablet:col-span-1
               blur-[2px]
               tablet:blur-0
               left-0
@@ -502,7 +507,7 @@
               rounded-xl
               h-[226px]
               w-[186px]
-              tablet:w-[250px] tablet:h-[300px]
+              tablet:w-full tablet:h-[300px]
               desktop:w-[440px] desktop:h-[500px]
             "
           >
@@ -548,12 +553,12 @@
                 >
               </div>
             </div>
-          </div>
+          </a>
           <!-- second card -->
-          <div
+          <a href="#"
             class="
               relative
-              col-start-4 col-span-2
+              col-start-2 col-span-1
               flex
               items-center
               justify-center
@@ -561,7 +566,7 @@
               bg-center-ball bg-center bg-cover bg-no-repeat
               h-[226px]
               w-[186px]
-              tablet:w-[250px] tablet:h-[300px]
+              tablet:w-full tablet:h-[300px]
               desktop:w-[350px] desktop:h-[500px]
               rounded-xl
             "
@@ -608,9 +613,9 @@
                 >
               </div>
             </div>
-          </div>
+          </a>
           <!-- third card -->
-          <div
+          <a href="#"
             class="
               flex
               absolute
@@ -619,7 +624,8 @@
               justify-center
               scale-75
               tablet:scale-100
-              col-start-6 col-span-3
+              col-start-3 col-span-1
+              desktop:col-start-6 desktop:col-span-3
               blur-[2px]
               tablet:blur-0
               right-0
@@ -629,7 +635,7 @@
               rounded-xl
               h-[226px]
               w-[186px]
-              tablet:w-[250px] tablet:h-[300px]
+              tablet:w-full tablet:h-[300px]
               desktop:w-[440px] desktop:h-[500px]
             "
           >
@@ -675,7 +681,7 @@
                 >
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <!-- category slider -->
         <div
@@ -774,182 +780,187 @@
         </a>
       </div>
       <!-- actuals -->
-      <div class="bg-[rgba(0,0,0,0.05)] px-[10px] py-[20px]">
-        <h3
-          class="
-            text-[#333333] text-[20px]
-            desktop:text-[36px]
-            text-center
-            desktop:text-left
-            font-semibold
-            desktop:font-medium
-            pb-[10px]
-            desktop:pb-[20px]
-            leading-[20px]
-            desktop:leading-[36px]
-            max-w-screen-desktop
-            m-auto
-          "
-        >
-          Актуальные предложения
-        </h3>
-        <div
-          class="
-            grid grid-cols-3
-            desktop:flex
-            justify-start
-            items-center
-            gap-[10px]
-            desktop:gap-[25px]
-            max-w-screen-desktop
-            m-auto
-          "
-        >
-          <a
-            href="#"
+      <div class="bg-[rgba(0,0,0,0.05)] px-[10px] tablet:px-0 py-[20px]">
+        <div class="
+        tablet:max-w-screen-tablet
+        desktop:max-w-screen-desktop
+        tablet:mx-auto">
+          <h3
             class="
-              relative
-              flex
-              bg-actual-balls bg-no-repeat
-              h-[122px]
-              desktop:h-[280px] desktop:w-[240px]
+              text-[#333333] text-[20px]
+              desktop:text-[36px]
+              tablet:text-[28px]
               text-center
-              bg-center bg-cover
-              rounded
+              tablet:text-left
+              font-semibold
+              tablet:font-medium
+              py-[10px]
+              tablet:pb-[20px]
+              leading-[20px]
+              tablet:leading-[28px]
+              desktop:leading-[36px]
             "
           >
-            <div
-              class="
-                absolute
-                top-0
-                right-0
-                left-0
-                bg-[#4FB2F8] bg-opacity-90
-                text-[#fff] text-[20px]
-                desktop:text-[30px]
-                border-b border-[#11111111]
-                rounded-t
-              "
-            >
-              Мячи
-            </div>
-          </a>
-          <a
-            href="#"
-            class="
-              relative
-              flex
-              bg-actual-boots bg-no-repeat
-              h-[122px]
-              desktop:h-[280px] desktop:w-[240px]
-              text-center
-              bg-center bg-cover
-              rounded
+            Актуальные предложения
+          </h3>
+          <div class="
+              grid grid-cols-2
+              desktop:flex
+              justify-start
+              items-center
+              gap-[10px]
+              tablet:gap-[40px]
+              desktop:gap-[25px]
+              max-w-screen-desktop
+              m-auto
             "
           >
-            <div
+            <a
+              href="#"
               class="
-                absolute
-                top-0
-                right-0
-                left-0
-                bg-[#4FB2F8] bg-opacity-90
-                text-[#fff] text-[20px]
-                desktop:text-[30px]
-                border-b border-[#11111111]
-                rounded-t
+                relative
+                flex
+                bg-actual-balls bg-no-repeat
+                h-[122px]
+                desktop:h-[280px] desktop:w-[240px]
+                text-center
+                bg-center bg-cover
+                rounded
               "
             >
-              Бутсы
-            </div>
-          </a>
-          <a
-            href="#"
-            class="
-              relative
-              flex
-              bg-actual-jacket bg-no-repeat
-              h-[122px]
-              desktop:h-[280px] desktop:w-[240px]
-              text-center
-              bg-center bg-cover
-              rounded
-            "
-          >
-            <div
+              <div
+                class="
+                  absolute
+                  top-0
+                  right-0
+                  left-0
+                  bg-[#4FB2F8] bg-opacity-90
+                  text-[#fff] text-[20px]
+                  desktop:text-[30px]
+                  border-b border-[#11111111]
+                  rounded-t
+                "
+              >
+                Мячи
+              </div>
+            </a>
+            <a
+              href="#"
               class="
-                absolute
-                top-0
-                right-0
-                left-0
-                bg-[#4FB2F8] bg-opacity-90
-                text-[#fff] text-[20px]
-                desktop:text-[30px]
-                border-b border-[#11111111]
-                rounded-t
+                relative
+                flex
+                bg-actual-boots bg-no-repeat
+                h-[122px]
+                desktop:h-[280px] desktop:w-[240px]
+                text-center
+                bg-center bg-cover
+                rounded
               "
             >
-              Манишки
-            </div>
-          </a>
-          <a
-            href="#"
-            class="
-              relative
-              flex
-              bg-actual-socks bg-no-repeat
-              h-[122px]
-              desktop:h-[280px] desktop:w-[240px]
-              text-center
-              bg-center bg-cover
-              rounded
-            "
-          >
-            <div
+              <div
+                class="
+                  absolute
+                  top-0
+                  right-0
+                  left-0
+                  bg-[#4FB2F8] bg-opacity-90
+                  text-[#fff] text-[20px]
+                  desktop:text-[30px]
+                  border-b border-[#11111111]
+                  rounded-t
+                "
+              >
+                Бутсы
+              </div>
+            </a>
+            <a
+              href="#"
               class="
-                absolute
-                top-0
-                right-0
-                left-0
-                bg-[#4FB2F8] bg-opacity-90
-                text-[#fff] text-[20px]
-                desktop:text-[30px]
-                border-b border-[#11111111]
-                rounded-t
+                relative
+                flex
+                bg-actual-jacket bg-no-repeat
+                h-[122px]
+                desktop:h-[280px] desktop:w-[240px]
+                text-center
+                bg-center bg-cover
+                rounded
               "
             >
-              Гетры
-            </div>
-          </a>
-          <a
-            href="#"
-            class="
-              relative
-              flex
-              bg-actual-hands bg-no-repeat
-              h-[122px]
-              desktop:h-[280px] desktop:w-[240px]
-              text-center
-              bg-center bg-cover
-              rounded
-            "
-          >
-            <div
+              <div
+                class="
+                  absolute
+                  top-0
+                  right-0
+                  left-0
+                  bg-[#4FB2F8] bg-opacity-90
+                  text-[#fff] text-[20px]
+                  desktop:text-[30px]
+                  border-b border-[#11111111]
+                  rounded-t
+                "
+              >
+                Манишки
+              </div>
+            </a>
+            <a
+              href="#"
               class="
-                absolute
-                top-0
-                right-0
-                left-0
-                bg-[#4FB2F8] bg-opacity-90
-                text-[#fff] text-[20px]
-                desktop:text-[30px]
-                border-b border-[#11111111]
-                rounded-t
+                relative
+                flex
+                bg-actual-socks bg-no-repeat
+                h-[122px]
+                desktop:h-[280px] desktop:w-[240px]
+                text-center
+                bg-center bg-cover
+                rounded
               "
             >
-              Перчатки
-            </div>
-          </a>
+              <div
+                class="
+                  absolute
+                  top-0
+                  right-0
+                  left-0
+                  bg-[#4FB2F8] bg-opacity-90
+                  text-[#fff] text-[20px]
+                  desktop:text-[30px]
+                  border-b border-[#11111111]
+                  rounded-t
+                "
+              >
+                Гетры
+              </div>
+            </a>
+            <a
+              href="#"
+              class="
+                relative
+                flex
+                bg-actual-hands bg-no-repeat
+                h-[122px]
+                desktop:h-[280px] desktop:w-[240px]
+                text-center
+                bg-center bg-cover
+                rounded
+              "
+            >
+              <div
+                class="
+                  absolute
+                  top-0
+                  right-0
+                  left-0
+                  bg-[#4FB2F8] bg-opacity-90
+                  text-[#fff] text-[20px]
+                  desktop:text-[30px]
+                  border-b border-[#11111111]
+                  rounded-t
+                "
+              >
+                Перчатки
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <!-- promo -->
@@ -1003,7 +1014,7 @@
         </button>
       </div>
       <!-- wearing -->
-      <div class="flex flex-col desktop:grid grid-cols-2 desktop:justify-center desktop:items-center desktop:max-w-screen-desktop w-full m-auto my-[20px] px-[10px]">
+      <div class="flex flex-col desktop:grid grid-cols-2 desktop:justify-center desktop:items-center tablet:max-w-screen-tablet desktop:max-w-screen-desktop w-full m-auto my-[20px] px-[10px]">
         <div class="">
           <h5 class="text-black text-[26px] desktop:text-[36px] leading-[26px] leading-[36px] font-bold mb-[10px] desktop:max-w-[500px]">
             И один в поле воин, если прометеем скроен
@@ -1092,7 +1103,7 @@
     </main>
     <!-- footer -->
     <footer class="bg-[#333333] py-[40px]">
-      <div class="flex desktop:block flex justify-between items-center pb-[20px] px-[10px] desktop:px-0 desktop:max-w-screen-desktop mx-auto">
+      <div class="flex desktop:block flex justify-between items-center pb-[20px] px-[10px] desktop:px-0 tablet:max-w-screen-tablet desktop:max-w-screen-desktop mx-auto">
         <ul class="text-white text-[16px] desktop:text-[21px] desktop:flex justify-between desktop:py-[30px]">
           <li class="text-white font-meduim">
             <a href="#" class="flex items-center">
@@ -1121,7 +1132,7 @@
           <li><a href="#">Доставка</a></li>
         </ul>
       </div>
-      <div class="flex justify-between items-center desktop:items-start px-[10px] desktop:px-0 desktop:max-w-screen-desktop mx-auto">
+      <div class="flex justify-between items-center desktop:items-start px-[10px] desktop:px-0 tablet:max-w-screen-tablet desktop:max-w-screen-desktop mx-auto">
         <div class="desktop:hidden">
           <svg
             width="130"
